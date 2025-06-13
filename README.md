@@ -1,44 +1,78 @@
-# 🛍️ Customer Segmentation Project  
+# 🛍️ Customer Segmentation Project
 
-This project focuses on segmenting customers based on their purchasing behavior to help businesses understand their customers better, improve marketing strategies, and increase customer retention.  
-
----
-
-## 📊 **Project Overview**  
-
-Customer segmentation is a critical aspect of business strategy, allowing companies to target specific groups of customers effectively.  
-In this project, I applied **machine learning algorithms** to group customers based on various factors such as purchase patterns, demographics, and churn likelihood.
+This project focuses on segmenting customers based on their purchasing behavior to help businesses better understand their customer base, enhance marketing strategies, and improve customer retention.
 
 ---
 
-## 🧰 **Features**  
+## 📊 Project Overview
 
-- **Dataset**:  
-  - Simulated customer data containing features such as customer demographics, purchase history, and churn data.  
+Customer segmentation is an essential component of business intelligence. In this project, machine learning algorithms are used to group customers based on:
 
-- **Key Metrics**:  
-  - Recency (last purchase date)  
-  - Frequency (number of purchases)  
-  - Monetary value (total spend)  
+- Demographics  
+- Purchase behavior  
+- Recency, Frequency, and Monetary value (RFM)  
+- Churn likelihood  
 
-- **Technologies and Libraries**:  
-  - Programming Language: **Python**  
-  - Libraries: **Pandas**, **NumPy**, **Matplotlib**, **Scikit-learn**, **Seaborn**  
-
-- **Machine Learning Algorithms**:  
-  - K-Means Clustering  
-  - DBSCAN  
-
-- **Visualizations**:  
-  - Customer distribution plots  
-  - Cluster visualizations  
-  - Heatmaps  
+This approach helps in creating targeted marketing campaigns and developing personalized customer experiences.
 
 ---
 
-## 🚀 **Installation and Usage**  
+## 🧰 Features
 
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/Harathich/Machine-Learning.git
-   cd Machine-Learning
+### 🗂️ Dataset
+The project uses a simulated dataset that includes:
+- Customer demographics (age, gender)  
+- Purchase history (product categories, price, quantity)  
+- Payment method  
+- Churn indicator  
+- Return history  
+
+### 📈 Key Metrics Computed
+- **Recency**: Days since the last purchase  
+- **Frequency**: Number of purchases made  
+- **Monetary Value**: Total amount spent  
+
+These metrics are then used for RFM analysis.
+
+---
+
+## 🔧 Technologies Used
+
+- **Language**: Python  
+- **Libraries**:
+  - pandas, numpy – data handling  
+  - matplotlib, seaborn – data visualization  
+  - scikit-learn – clustering algorithms & preprocessing  
+
+---
+
+## 🧠 Machine Learning Algorithms
+
+- **K-Means Clustering**: For unsupervised customer grouping  
+- **DBSCAN**: Density-based clustering for identifying outlier customers  
+
+---
+
+## 📊 Visualizations
+
+- RFM distribution plots  
+- Clustering plots with centroids  
+- Heatmaps for feature correlation  
+- Elbow method for optimal clusters  
+- DBSCAN epsilon neighborhood analysis  
+
+---
+
+## 🚀 Installation and Usage
+
+```bash
+# Clone the repository
+git clone https://github.com/Harathich/Customer_segmentation.git
+cd Customer_segmentation
+
+# Install the required dependencies
+pip install -r requirements.txt
+
+# Run the notebook
+jupyter notebook Datamining.ipynb
+
